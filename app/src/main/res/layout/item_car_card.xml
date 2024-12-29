@@ -1,0 +1,94 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@drawable/card_background"
+    android:elevation="4dp"
+    android:gravity="center"
+    android:layout_margin="8dp">
+
+    <!-- Car Image -->
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:src="@drawable/car_image_placeholder"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_corner_radius" />
+
+    <!-- Car Name -->
+    <TextView
+        android:id="@+id/car_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMW 2023"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textStyle="bold" />
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/car_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="£700.0/day"
+        android:textSize="14sp"
+        android:textColor="#FF6347"
+        android:layout_marginTop="4dp" />
+
+    <!-- Ratings and Time -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="8dp">
+
+        <!-- Rating -->
+        <ImageView
+            android:id="@+id/starIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_star"
+            android:contentDescription="Star Icon" />
+
+        <TextView
+            android:id="@+id/carRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.5"
+            android:textSize="12sp"
+            android:textColor="#FFD700"
+            android:layout_marginStart="4dp" />
+
+        <!-- Time -->
+        <ImageView
+            android:id="@+id/timeIcon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="16dp"
+            android:src="@drawable/ic_time"
+            android:contentDescription="Time Icon" />
+
+        <TextView
+            android:id="@+id/carTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="15 min"
+            android:textSize="12sp"
+            android:textColor="#333"
+            android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <!-- Add to Cart Button -->
+    <ImageView
+        android:id="@+id/addToCart"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Add to Cart Icon"
+        android:src="@drawable/ic_add" />
+</LinearLayout>
